@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gayathri G — ECE student exploring electronics, IoT, and emerging technologies.">
+  <title>Gayathri G | ECE Portfolio</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #657087;
+      --paper: #f7f8fc;
+      --card: #ffffff;
+      --line: #e3e7f0;
+      --accent: #5b55d9;
+      --accent-dark: #3730a3;
+      --mint: #dff7ef;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    a { color: var(--accent-dark); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(1060px, calc(100% - 36px)); margin: auto; }
+    header { padding: 20px 0; }
+    nav { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+    .brand { font-weight: 850; letter-spacing: -.04em; font-size: 1.15rem; }
+    .navlinks { display: flex; gap: 20px; flex-wrap: wrap; font-size: .92rem; }
+    .hero {
+      padding: 78px 0 66px;
+      background: radial-gradient(circle at 85% 20%, #e6e4ff 0, transparent 28%), linear-gradient(135deg, #f7f8fc, #eefbf7);
+    }
+    .eyebrow { color: var(--accent-dark); font-weight: 750; letter-spacing: .12em; text-transform: uppercase; font-size: .78rem; }
+    h1 { font-size: clamp(2.5rem, 7vw, 5rem); line-height: 1.04; letter-spacing: -.065em; margin: 12px 0 20px; max-width: 780px; }
+    .hero p { max-width: 690px; color: var(--muted); font-size: 1.12rem; }
+    .actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+    .button { display: inline-block; padding: 11px 17px; border-radius: 12px; font-weight: 750; border: 1px solid var(--accent); }
+    .button.primary { background: var(--accent); color: white; }
+    .button.secondary { color: var(--accent-dark); background: rgba(255,255,255,.7); border-color: var(--line); }
+    section { padding: 54px 0; }
+    .section-heading { margin-bottom: 24px; }
+    h2 { font-size: clamp(1.65rem, 4vw, 2.3rem); line-height: 1.2; letter-spacing: -.04em; margin: 0 0 8px; }
+    .section-heading p, .muted { color: var(--muted); margin: 0; }
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 18px; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 24px; box-shadow: 0 8px 28px rgba(25, 35, 65, .035); }
+    .about { grid-column: span 7; }
+    .facts { grid-column: span 5; }
+    .project { grid-column: span 8; }
+    .side-note { grid-column: span 4; background: var(--mint); border-color: #c8eee1; }
+    .tag-list { display: flex; gap: 9px; flex-wrap: wrap; padding: 0; list-style: none; margin: 16px 0 0; }
+    .tag-list li { background: #f0efff; color: #39328d; padding: 6px 11px; border-radius: 999px; font-size: .88rem; font-weight: 650; }
+    .fact { padding: 10px 0; border-bottom: 1px solid var(--line); }
+    .fact:last-child { border: 0; }
+    .fact strong { display: block; font-size: .85rem; color: var(--muted); font-weight: 650; }
+    .fact span { font-weight: 750; }
+    .project-label { display: inline-block; font-size: .76rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--accent-dark); background: #efeeff; padding: 5px 9px; border-radius: 8px; }
+    .project h3 { font-size: 1.35rem; margin: 13px 0 8px; }
+    .project ul { padding-left: 20px; }
+    .project li { margin: 6px 0; }
+    .note { font-size: .9rem; color: #4d5b6c; }
+    .contact { background: #171d32; color: white; border-radius: 26px; padding: 34px; }
+    .contact p { color: #d4d9e8; }
+    .contact a { color: #c7c4ff; }
+    footer { padding: 25px 0 35px; color: var(--muted); font-size: .86rem; }
+    @media (max-width: 700px) {
+      .hero { padding: 52px 0 48px; }
+      .about, .facts, .project, .side-note { grid-column: span 12; }
+      .navlinks { gap: 11px; font-size: .85rem; }
+      .contact { padding: 25px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <nav aria-label="Main navigation">
+      <a class="brand" href="#home">Gayathri G<span style="color:var(--accent)">.</span></a>
+      <div class="navlinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap">
+        <div class="eyebrow">ECE Student · Curious Learner · Project Explorer</div>
+        <h1>Learning by building.<br>Growing by exploring.</h1>
+        <p>
+          I’m Gayathri, an Electronics and Communication Engineering student at LICET.
+          I’m interested in electronics, IoT, embedded systems, and emerging technologies,
+          and I enjoy exploring how ideas can become practical solutions.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="#projects">Explore my project</a>
+          <a class="button secondary" href="#contact">Connect with me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>A little about me</h2>
+          <p>Curiosity, consistency, and a willingness to improve.</p>
+        </div>
+        <div class="grid">
+          <article class="card about">
+            <p>
+              I’m currently pursuing my second year of ECE at Loyola-ICAM College of
+              Engineering and Technology (LICET). I like learning concepts beyond the
+              syllabus, working through challenges, and improving through feedback.
+            </p>
+            <p>
+              I believe I don’t need to know everything before I begin. I need to stay
+              curious, ask questions, practise, and keep learning until I understand.
+              I’m looking forward to collaborating with others and contributing to
+              meaningful technical projects.
+            </p>
+          </article>
+          <aside class="card facts">
+            <div class="fact"><strong>Education</strong><span>B.E. Electronics & Communication Engineering</span></div>
+            <div class="fact"><strong>College</strong><span>LICET, Chennai</span></div>
+            <div class="fact"><strong>Current focus</strong><span>Learning, projects & practical skills</span></div>
+            <div class="fact"><strong>Languages</strong><span>Tamil · English</span></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>Skills I’m building</h2>
+          <p>My current foundation and areas I’m exploring.</p>
+        </div>
+        <div class="card">
+          <ul class="tag-list">
+            <li>C Programming</li>
+            <li>Internet of Things (IoT)</li>
+            <li>Electronics Fundamentals</li>
+            <li>Problem Solving</li>
+            <li>Team Collaboration</li>
+            <li>Adaptability</li>
+            <li>Continuous Learning</li>
+          </ul>
+          <p class="note" style="margin-top:18px">I’m continuing to develop these skills through coursework, independent learning, and hands-on project work.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>Project experience</h2>
+          <p>Exploring how engineering can address real-world needs.</p>
+        </div>
+        <div class="grid">
+          <article class="card project">
+            <span class="project-label">IoT · Plant Monitoring · Smart Spraying</span>
+            <h3>AI-Based Smart Plant Health Monitoring & Smart Spraying System</h3>
+            <p>
+              A project concept that combines plant-stress classification with a controlled
+              spraying mechanism to support more targeted plant care.
+            </p>
+            <ul>
+              <li>Explores classifying leaf images as healthy, lightly stressed, or highly stressed.</li>
+              <li>Connects the classification result to an ESP32-based control setup.</li>
+              <li>Uses a relay and mini water pump to demonstrate different spraying responses.</li>
+            </ul>
+            <p class="note"><strong>Learning takeaway:</strong> Connecting software decisions with hardware outputs requires testing, clear logic, and iteration.</p>
+          </article>
+          <aside class="card side-note">
+            <h3 style="margin-top:0">What I value</h3>
+            <p>I value asking questions, learning from mistakes, accepting constructive feedback, and sharing what I learn with others.</p>
+            <p>I’m especially interested in opportunities where students can learn together and turn ideas into practical experiences.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact">
+          <div class="eyebrow" style="color:#c7c4ff">Let’s connect</div>
+          <h2>Always learning. Open to collaboration.</h2>
+          <p>If you’re interested in learning, building, or exchanging ideas around electronics and technology, I’d be happy to connect.</p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gayathri-g-17b496399/" target="_blank" rel="noopener noreferrer">linkedin.com/in/gayathri-g-17b496399</a></p>
+          <p class="note" style="color:#c8cede">Before publishing, review the details and add your GitHub link or email if you want to share them publicly.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    © <span id="year"></span> Gayathri G · Personal student portfolio
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
